@@ -1,6 +1,6 @@
 ﻿namespace HidingPlaceGame
 {
-    class OutsideWithDoor: OutsideWithHidingPlace, IHasExteriorDoor
+    class OutsideWithDoor: Outside, IHasExteriorDoor
     {
         // Doorlocation: Location where the door leads
         public Location DoorLocation { get; set; }
