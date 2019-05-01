@@ -1,6 +1,6 @@
-﻿namespace BuildAHouse
+﻿namespace HidingPlaceGame
 {
-    class RoomWithDoor : Room, IHasExteriorDoor
+    class RoomWithDoor : RoomWithHidingPlace, IHasExteriorDoor
     {
         public string DoorDescription
         { get; }
@@ -8,8 +8,8 @@
         public Location DoorLocation
         { get; set; }
 
-        public RoomWithDoor(string name, string decoration, string description):
-            base(name, decoration)
+        public RoomWithDoor(string name, string decoration, string description, string hidingPlace):
+            base(name, decoration, hidingPlace)
         {
             DoorDescription = description;
         }

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BuildAHouse
+namespace HidingPlaceGame
 {
-    class Room: Location
+    public class Room: Location
     {
         private string decoration;
         public Room(string name, string decoration):

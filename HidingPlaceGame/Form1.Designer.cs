@@ -1,4 +1,4 @@
-﻿namespace BuildAHouse
+﻿namespace HidingPlaceGame
 {
     partial class Form1
     {

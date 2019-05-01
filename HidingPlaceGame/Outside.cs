@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BuildAHouse
+namespace HidingPlaceGame
 {
-    class Outside: Location
+    public class Outside: Location
     {
         private bool hot;
         public Outside(string name, bool hot):

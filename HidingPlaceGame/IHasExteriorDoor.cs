@@ -1,4 +1,4 @@
-﻿namespace BuildAHouse
+﻿namespace HidingPlaceGame
 {
     interface IHasExteriorDoor
     {

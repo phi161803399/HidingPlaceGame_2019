@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BuildAHouse
+namespace HidingPlaceGame
 {
     public abstract class Location
     {
