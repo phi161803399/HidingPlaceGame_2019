@@ -6,6 +6,7 @@ namespace HidingPlaceGame
     public partial class Form1 : Form
     {
         private Location currentLocation;
+        private Opponent opponent;
 
         RoomWithDoor livingRoom;
         RoomWithDoor kitchen;
@@ -25,6 +26,7 @@ namespace HidingPlaceGame
             CreateLocations();
             // starting position
             MoveToANewLocation(frontYard);
+            opponent = new Opponent(frontYard);
         }
 
         public void CreateLocations()
@@ -81,6 +83,18 @@ namespace HidingPlaceGame
         private void goThroughTheDoor_Click(object sender, EventArgs e)
         {
             MoveToANewLocation((currentLocation as IHasExteriorDoor).DoorLocation);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "Form1";
+            this.ResumeLayout(false);
+
         }
     }
 }
